@@ -1,8 +1,8 @@
 # Auto-label
 
-![Unit test](https://github.com/Renato66/auto-label/workflows/Unit%20test/badge.svg)
-[![Auto Label](https://github.com/Renato66/auto-label/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/Renato66/auto-label)
-[![codecov](https://codecov.io/gh/Renato66/auto-label/branch/master/graph/badge.svg)](https://codecov.io/gh/Renato66/auto-label)
+![Unit test](https://github.com/nikskiz/auto-label/workflows/Unit%20test/badge.svg)
+[![Auto Label](https://github.com/nikskiz/auto-label/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/nikskiz/auto-label)
+[![codecov](https://codecov.io/gh/nikskiz/auto-label/branch/master/graph/badge.svg)](https://codecov.io/gh/nikskiz/auto-label)
 
 ![image](https://user-images.githubusercontent.com/9284273/79672530-57c1db80-81a9-11ea-900c-3b4f73984e0a.png)
 
@@ -11,7 +11,7 @@ The Auto label action will check for every new issue and automatically adds a la
 ## Creating
 
 Check out the app to make yml file
-[https://renato66.github.io/auto-label/](https://renato66.github.io/auto-label/)
+[https://nikskiz.github.io/auto-label/](https://nikskiz.github.io/auto-label/)
 
 or
 
@@ -26,7 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: Renato66/auto-label@v2
+      - uses: nikskiz/auto-label@v2
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           ignore-comments: true
@@ -115,9 +115,9 @@ To add a badge simple replace owner and repository
 
 <!-- Replace <OWNER> and <REPOSITORY>. It assumes workflow name is "Labeling%20new%20issue" -->
 
-[![Auto Label](https://github.com/Renato66/auto-label/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/Renato66/auto-label)
+[![Auto Label](https://github.com/nikskiz/auto-label/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/nikskiz/auto-label)
 
 ```
 <!-- Replace <OWNER> and <REPOSITORY>. It assumes workflow name is "Labeling%20new%20issue" -->
-[![Auto Label](https://github.com/<OWNER>/<REPOSITORY>/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/Renato66/auto-label)
+[![Auto Label](https://github.com/<OWNER>/<REPOSITORY>/workflows/Labeling%20new%20issue/badge.svg)](https://github.com/nikskiz/auto-label)
 ```
