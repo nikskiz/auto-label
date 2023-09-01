@@ -80,12 +80,12 @@ const getIssueLabels: Function = (body: string, labels: string[]): string[] => {
   const parsedBody = parseAutoLabel(body)
 
 
-  if (body == null) {
+  if (ignoreComments && body == null) {
     const noCommentaryBody = ''
     hasLabels(noCommentaryBody).map(elem => {
       selectedLabels.push(elem)
     })
-  } if (ignoreComments) {
+  } else if (ignoreComments && body != null) {
     const noCommentaryBody = parsedBody.replace(/\<!--(.|\n)*?-->/g, '')
     hasLabels(noCommentaryBody).map(elem => {
       selectedLabels.push(elem)
